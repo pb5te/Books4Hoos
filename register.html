@@ -1,0 +1,196 @@
+<!-- Peter Bahng, Alexander Kim, Max Serpe
+Course Project Part 4
+register.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="favicon.ico">
+	<title>Books4Hoos - Register</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Custom styles for this template -->
+	<link href="css/button.css" rel="stylesheet">
+  <link href="css/navbar.css" rel="stylesheet">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+      <![endif]-->
+    </head>
+    <body>
+
+    <!--Navigation Bar-->
+     <nav class="navbar navbar-default navbar-fixed-top">
+
+       <div class="navbar-header">
+
+
+
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+         <span class="sr-only">Toggle navigation</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+
+       <a class="navbar-brand" href="index.php"><img id="brand-image" alt="Website Logo" src="navbarlogo.png">Home</>
+       </a>
+
+       <a class="navbar-brand navbar" href="about.html">About</a>
+       <a class="navbar-brand" href="register.html">Register</a>
+       <a class="navbar-brand" href="buy.html">Buy Books</a>
+       <a class="navbar-brand" href="sell.html">Sell Books</a>
+       <a class="navbar-brand" href="export.html">Export Data</a>
+     </div>
+   </nav>
+   <!--End Navigation-->
+
+   <!-- Wrapper for slides -->
+
+   <div id = "myCarousel" class ="carousel slide"
+   <ol class = "carousel-indicators">
+     <li data target = "myCarousel" data-slide-to = "0" "active"></li>
+     <li data target = "myCarousel" data-slide-to = "1"></li>
+   </ol>
+
+   <div class="carousel-inner">
+
+     <div class="item active">
+      <a href="index.php"><img src="books4hoosbanner.jpg" alt = "Home Page" class = "img-responsive"></a>
+      <div class="container">
+       <div class="carousel-caption">            
+       </div>  
+     </div>  
+   </div>
+
+   <div class="item">
+    <a href="about.html"><img src="Slide2.jpg"></a>
+    <div class="container">
+     <div class="carousel-caption">            
+     </div>  
+   </div>  
+ </div>
+
+ <a class = "carousel-control left" href= "#myCarousel" data-slide = "prev">
+   <span class = "icon-prev"></span>
+ </a>
+
+ <a class = "carousel-control right" href= "#myCarousel" data-slide = "next">
+   <span class = "icon-next"></span>
+ </a>
+
+
+
+</div>
+<!--Carousel End-->
+
+
+<div class="container">
+
+  <div class="row">
+   <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+    <form role="form"action="register.php" method="post">
+     <h2>Please Sign Up <small>It's free and always will be.</small></h2>
+     <hr class="colorgraph">
+     <div class="form-group">
+      <input type="text" name="username" id="user_name" class="form-control input-lg" placeholder="Username" tabindex="1">
+    </div>
+    <div class="form-group">
+      <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email@emailprovider.com" tabindex="2">
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-6">
+       <div class="form-group">
+        <input type="text" name="streetaddress" id="street_address" class="form-control input-lg" placeholder="Street Address" tabindex="3">
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-6">
+     <div class="form-group">
+      <input type="text" name="zipcode" id="zip_code" class="form-control input-lg" placeholder="Zip Code" tabindex="4">
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12 col-sm-6 col-md-6">
+   <div class="form-group">
+    <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password" tabindex="5">
+  </div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-6">
+ <div class="form-group">
+  <input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-lg" placeholder="Confirm Password" tabindex="6">
+</div>
+</div>
+</div>
+<div class="row">
+  <div class="col-xs-4 col-sm-3 col-md-3">
+   <span class="button-checkbox">
+    <input type="checkbox" name="t_and_c" id="t_and_c" class="hidden" value="1">
+  </span>
+</div>
+<div class="col-xs-8 col-sm-9 col-md-9">
+ By clicking <strong class="label label-primary">Register</strong>, you agree to the <a href="#" data-toggle="modal" data-target="#t_and_c_m">Terms and Conditions</a> set out by this site, including our Cookie Use.
+</div>
+</div>
+
+<hr class="colorgraph">
+<div class="row">
+  <div class="col-xs-12 col-md-6"><input type="submit" value="Register" class="btn btn-primary btn-block btn-lg" tabindex="7"></div>
+  <div class="col-xs-12 col-md-6"><input type="reset" class="btn btn-success btn-block btn-lg"></a></div>
+</div>
+</form>
+</div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="t_and_c_m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+ <div class="modal-dialog modal-lg">
+  <div class="modal-content">
+   <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 class="modal-title" id="myModalLabel">Terms & Conditions</h4>
+  </div>
+  <div class="modal-body">
+    <p>1. Terms:
+     By accessing this web site, you are agreeing to be bound by these web site Terms and Conditions of Use, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this web site are protected by applicable copyright and trade mark law.</p>
+     <p>2. Use License
+      Permission is granted to temporarily download one copy of the materials (information or software) on Books4Hoos's web site for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:
+      modify or copy the materials;
+      use the materials for any commercial purpose, or for any public display (commercial or non-commercial);
+      attempt to decompile or reverse engineer any software contained on Books4Hoos's web site;
+      remove any copyright or other proprietary notations from the materials; or
+      transfer the materials to another person or "mirror" the materials on any other server.
+      This license shall automatically terminate if you violate any of these restrictions and may be terminated by Books4Hoos at any time. Upon terminating your viewing of these materials or upon the termination of this license, you must destroy any downloaded materials in your possession whether in electronic or printed format.</p>
+      <p>3. Disclaimer
+       The materials on Books4Hoos's web site are provided "as is". Books4Hoos makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties, including without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights. Further, Books4Hoos does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials on its Internet web site or otherwise relating to such materials or on any sites linked to this site.</p>
+       <p>4. Limitations
+        In no event shall Books4Hoos or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption,) arising out of the use or inability to use the materials on Books4Hoos's Internet site, even if Books4Hoos or a Books4Hoos authorized representative has been notified orally or in writing of the possibility of such damage. Because some jurisdictions do not allow limitations on implied warranties, or limitations of liability for consequential or incidental damages, these limitations may not apply to you.</p>
+        <p>5. Revisions and Errata
+         The materials appearing on Books4Hoos's web site could include technical, typographical, or photographic errors. Books4Hoos does not warrant that any of the materials on its web site are accurate, complete, or current. Books4Hoos may make changes to the materials contained on its web site at any time without notice. Books4Hoos does not, however, make any commitment to update the materials.</p>
+         <p>6. Links
+          Books4Hoos has not reviewed all of the sites linked to its Internet web site and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by Books4Hoos of the site. Use of any such linked web site is at the user's own risk.</p>
+          <p>7. Site Terms of Use Modifications
+           Books4Hoos may revise these terms of use for its web site at any time without notice. By using this web site you are agreeing to be bound by the then current version of these Terms and Conditions of Use.</p>
+         </div>
+         <div class="modal-footer">
+           <button type="button" class="btn btn-primary" data-dismiss="modal">I Agree</button>
+         </div>
+       </div><!-- /.modal-content -->
+     </div><!-- /.modal-dialog -->
+   </div><!-- /.modal -->
+   <hr>
+   <footer>
+    <p><center>&copy; Books4Hoos 2015</center></p>
+  </footer>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/registration.js"></script>
+
+</body>
+</html>
